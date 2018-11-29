@@ -19,7 +19,7 @@ public class Folder {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @OneToMany(mappedBy = "folder")
+    @OneToMany(mappedBy = "folder") //name of the attribute in 'File' line 24.
     private List<File> files;
 
 
